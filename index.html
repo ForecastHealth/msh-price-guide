@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fuzzy Search</title>
+    <title>MSH Price Guide Query</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-    <input type="text" id="search" placeholder="Search..." />
-    <button id="search-button">Search</button>
-    <table id="results"></table>
+    <div class="container">
+        <h1 class="mt-4 mb-3">MSH Price Guide Search</h1>
+        <p>Search for a product by name or description: <a href>https://mshpriceguide.org</a></p>
+        <p>Start typing and a table will appear. Click above the column names to sort.</p>
+        <p>We do not own this information, disclaimer and source here: <a href>https://github.com/ForecastHealth/msh-price-guide</a></p>
+        <form id="search-form" class="form-inline my-2">
+            <input class="form-control mr-sm-2" type="text" id="search" placeholder="Enter search here..." />
+        </form>
+        <table id="results" class="table table-striped mt-4"></table>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.basic.min.js"></script>
     <script src="app.js"></script>
 </body>
