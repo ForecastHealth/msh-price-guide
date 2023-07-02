@@ -1,5 +1,6 @@
 # msh-price-guide
-A standalone, queryable front-end for the International Medical Products Price Guide
+A standalone, queryable front-end for the International Medical Products Price Guide.
+We downloaded the excel spreadsheets from: https://mshpriceguide.org, converted them to JSON, and created a simple web interface to query the data.
 
 ## Disclaimer
 Please note that this project and its data are not created, managed, or endorsed by the original data owners.
