@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>MSH Price Guide Query</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
 </head>
+
 <body>
     <div class="container">
         <h1 class="mt-4 mb-3">MSH Price Guide Search</h1>
-        <p>Search for a product by name or description: <a href="https://mshpriceguide.org">View the MSH Price Guide here.</a></p>
+        <p>Search for a product by any value: <a href="https://mshpriceguide.org">View the MSH Price Guide
+                here.</a></p>
+        <p>Searching is fuzzy over all data, e.g. "paracetamol 100 mg SUPPOS 2015" will filter across four categories. </p>
         <p>Start typing and a table will appear. Click above the column names to sort.</p>
-        <p>We do not own this information. Disclaimer and source <a href="https://github.com/ForecastHealth/msh-price-guide">on our github repository.</a></p>
+        <p>We do not own this information. Disclaimer and source <a
+                href="https://github.com/ForecastHealth/msh-price-guide">on our github repository.</a></p>
 
-        <form id="search-form" class="form-inline my-2">
-            <input class="form-control mr-sm-2" type="text" id="search" placeholder="Enter search here..." />
-        </form>
-        <table id="results" class="table table-striped mt-4"></table>
+        <table id="results" class="table table-striped mt-4 display">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Supplementary Info</th>
+                    <th>Strength</th>
+                    <th>Dosage Form</th>
+                    <th>Route of Admin</th>
+                    <th>WHO Status</th>
+                    <th>DDD</th>
+                    <th>DDD Unit</th>
+                    <th>ATC Code</th>
+                    <th>Buyer Median (US$)</th>
+                    <th>Supplier Median (US$)</th>
+                    <th>Comparison Unit</th>
+                    <th>msh_year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Results will be populated here -->
+            </tbody>
+        </table>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.basic.min.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
