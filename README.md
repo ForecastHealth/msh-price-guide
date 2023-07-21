@@ -12,3 +12,5 @@ The maintainers of this project are not responsible for any damage, losses, or a
 Users are strongly advised to check with the original data owners for confirmation and authorization before using the data from this project, especially for commercial purposes or any purpose that could impact the rights of third parties.
 
 The use of the data provided by this project does not constitute any form of endorsement or affiliation by the original data owners.
+
+Please refer to the original Terms of Use here: https://mshpriceguide.org/en/terms-of-use/
